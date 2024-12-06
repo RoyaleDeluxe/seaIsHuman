@@ -1,0 +1,79 @@
+
+.water-spray2 {
+  position: fixed;
+  z-index: 5;
+  width: 400px;
+  height: auto;
+  right: 190px;
+  top: 35px;
+  transform: scaleX(-1);
+}
+
+.corkwood {
+  position: fixed;
+  z-index: 9;
+  width: 75px;
+  height: auto;
+  right: 190px;
+  top: 105px;
+  transform: rotate(-70deg)
+}
+
+.beating-heart {
+  position: fixed;
+  z-index: 10;
+  width: 500px;
+  height: auto;
+  right: 0;
+  top: 0;
+  transform: translateX(25%) rotate(-25deg);
+}
+
+.waves {
+  position: fixed;
+  z-index: 7;
+  width: 100%;
+  height: 140%;
+  top: 0;
+  left: 0;
+  transform: translateY(-22%);
+}
+
+.sand {
+    position: fixed;
+    z-index: 8;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+}
+
+.bubbles {
+  position: fixed;
+  z-index: 9;
+  bottom: 14%;
+  left: 300px;
+  height: 50%;
+}
+
+.garbage {
+  position: fixed;
+  z-index: 10;
+  bottom: -80px;
+  left: 240px;
+}
+
+.bottle {
+  position: fixed;
+  z-index: 10;
+  bottom: 18px;
+  left: 180px;
+  height: 100px;
+}
+
+.lungs {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 227px;
+}
