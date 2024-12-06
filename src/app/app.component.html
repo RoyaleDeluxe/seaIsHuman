@@ -1,8 +1,14 @@
 
-<img class="beating-heart" src="/images/beating-heart2.gif" alt="Beating-Heart" />
-<img class="corkwood" src="/images/corkwood.gif" alt="Corkwood" />
-<img class="water-spray2" src="/images/water-spray2.gif" alt="Water-Spray" />
-<img class="waves" src="/images/waves.gif" alt="Waves" />
+<h1 class="title">Take care of the Sea</h1>
+<h1 class="title">if you want to take care of you !</h1>
+<img class="beating-heart" src="/images/beating-heart2.gif" alt="Beating-Heart"  (click)="uncork()"/>
+<div *ngIf="corkOnHeart; else waterSpray">
+  <img class="corkwood" src="/images/corkwood.gif" alt="Corkwood"/>
+</div>
+<ng-template #waterSpray>
+  <img class="water-spray2" src="/images/water-spray2.gif" alt="Water-Spray" />
+</ng-template>
+<img class="waves" [class.cork]="corkOnHeart" src="/images/waves.gif" alt="Waves" />
 
 <div *ngIf="garbageAlive && bottleAlive; else semiHappy">
   <img class="lungs" src="/images/lungs-sad.gif" alt="Lungs-Sad" />
@@ -16,7 +22,7 @@
   <img class="lungs" src="/images/lungs-happy.gif" alt="Lungs-Happy" />
 </ng-template>
 
-<img class="bubbles" src="/images/bubbles.gif" alt="Bubbles" />
+<img class="bubbles" [class.cork]="corkOnHeart" src="/images/bubbles.gif" alt="Bubbles" />
 
 <div *ngIf="garbageAlive">
   <img class="garbage" src="/images/garbage2.gif" alt="Garbage" (click)="killGarbage()" />
